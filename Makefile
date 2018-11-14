@@ -6,7 +6,7 @@
 #    By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/01 20:31:51 by mohhassa          #+#    #+#              #
-#    Updated: 2018/11/13 20:02:43 by mohhassa         ###   ########.fr        #
+#    Updated: 2018/11/14 00:05:23 by mohhassa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,11 @@ SRCS = libc/ft_bzero.c \
 				libc/ft_striter.c \
 				libc/ft_striteri.c \
 				libc/ft_strmap.c \
-				libc/ft_strmapi.c
+				libc/ft_strmapi.c \
+				libc/ft_strequ.c \
+				libc/ft_strnequ.c \
+				libc/ft_strsub.c \
+				libc/ft_strjoin.c
 
 INCLUDES = -I libft.h
 OBJECTS = *.o
