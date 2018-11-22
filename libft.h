@@ -6,12 +6,12 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 18:20:34 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/14 00:04:54 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/21 20:27:40 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef _LIBFT_H
+# define _LIBFT_H
 
 # include <unistd.h>
 # include <stdio.h>
@@ -39,7 +39,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void  *ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_memdel(void **as);
-void  ft_bzero(void *s, size_t n);
+void	ft_bzero(void *s, size_t n);
 char	*ft_strnew(size_t size);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strcpy(char *dest, char *src);
@@ -54,8 +54,13 @@ char	*ft_strstr(char *str, char *to_find);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 void	ft_putchar(char c);
+void	ft_putchar_fd(char c, int fd);
 void	ft_putstr(char *str);
-void	ft_putnbr(char *str);
+void	ft_putstr_fd(char *str, int fd);
+void	ft_putnbr(int nb);
+void	ft_putendl(char const *s);
+void	ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr_fd(int fd, int nb);
 void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
@@ -66,5 +71,7 @@ int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_itoa(int n);
+size_t	ft_intlen(int n);
 
 #endif
