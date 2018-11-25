@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 17:03:57 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/17 19:27:03 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/25 01:03:27 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strstr(char *str, char *to_find)
 	int		j;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
 		j = 0;
 		while (to_find[j] != '\0' && str[i + j] == to_find[j])

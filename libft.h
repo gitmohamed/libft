@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 18:20:34 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/21 20:27:40 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/24 23:09:49 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_itoa(int n);
 size_t	ft_intlen(int n);
+char			**ft_strsplit(char const *s, char c);
+char	*ft_strtrim(char const *s);
 
 #endif

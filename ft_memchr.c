@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/27 15:51:27 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/17 19:10:57 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/24 23:15:38 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,22 +20,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	ts = (unsigned char *)s;
 	tc = (unsigned char)c;
-
 	i = 0;
-	if (!s)
-		return (NULL);
 	while (n--)
 	{
 		if (ts[i] == tc)
-		return (ts += i);
+			return (ts += i);
 		i++;
 	}
 	return (NULL);
-}
-
-int		main(int ac, char **av)
-{
-	if (ac == 3)
-		printf("%p", ft_memchr(av[1], av[2][0], sizeof(char)));
-	return (0);
 }

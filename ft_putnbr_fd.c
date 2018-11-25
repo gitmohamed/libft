@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 13:23:31 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/21 20:31:06 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/24 17:32:19 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ void	ft_putnbr_fd(int fd, int nb)
 		}
 		if (nb >= 10)
 			ft_putnbr_fd((nb / 10), fd);
-		ft_putchar_fd((nb % 10 + '0'), fd);
+		ft_putchar_fd(nb % 10 + '0', fd);
 	}
 }
