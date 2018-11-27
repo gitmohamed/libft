@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/25 17:12:44 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/15 21:02:37 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/25 20:44:28 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-		size_t	t;
+	size_t	t;
 
-		t = 0;
-		while (t < n)
-		{
-			((char *)s)[t] = 0;
-			t++;
-		}
+	t = 0;
+	while (t < n)
+	{
+		((char *)s)[t] = 0;
+		t++;
+	}
 }

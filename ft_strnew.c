@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/11 13:04:09 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/17 19:28:13 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/25 19:33:34 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,9 @@
 char	*ft_strnew(size_t size)
 {
 	char *str;
-	
+
 	if (!(str = (char *)ft_memalloc(size + 1)))
 		return (NULL);
 	ft_memset(str, '\0', size + 1);
 	return (str);
 }
-

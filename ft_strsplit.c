@@ -6,24 +6,16 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/23 18:22:53 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/24 19:21:45 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/26 18:54:50 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*Allocates (with malloc(3)) and returns an array of “fresh”
-strings (all ending with ’\0’, including the array itself) obtained
-by spliting s using the character c as a delimiter.
-If the allocation fails the function returns NULL. Example
-: ft_strsplit("*hello*fellow***students*", ’*’) returns
-the array ["hello", "fellow", "students"].
-*/
-
 #include "libft.h"
 
-static int	wordcount(char const *s, char c)
+static int		wordcount(char const *s, char c)
 {
-	int i;
-	int count;
+	int		i;
+	int		count;
 
 	i = 0;
 	count = 0;
@@ -40,7 +32,7 @@ static int	wordcount(char const *s, char c)
 	return (count + 1);
 }
 
-static int	count(char const *s, char c, int i)
+static int		count(char const *s, char c, int i)
 {
 	int		ct;
 
@@ -53,7 +45,7 @@ static int	count(char const *s, char c, int i)
 	return (ct + 1);
 }
 
-static int	indexcount(char const *s, char c, int i)
+static int		indexcount(char const *s, char c, int i)
 {
 	while (s[i] == c)
 		i++;

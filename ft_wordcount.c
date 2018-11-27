@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
+/*   ft_wordcount.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/13 23:21:51 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/26 18:42:45 by mohhassa         ###   ########.fr       */
+/*   Created: 2018/11/26 19:25:17 by mohhassa          #+#    #+#             */
+/*   Updated: 2018/11/26 19:27:11 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strsub(char const *s, unsigned int start, size_t len)
+int		ft_wordcount(char *str)
 {
-	char		*buff;
-	size_t		i;
+	int		count;
 
-	i = -1;
-	if (!s)
-		return (NULL);
-	if (!(buff = ft_strnew(len)))
-		return (NULL);
-	while (++i < len)
-		buff[i] = s[start++];
-	return (buff);
+	count = 0;
+	str = ft_nextword(str);
+	while (*str)
+	{
+		count++;
+		str = ft_nextspace(str);
+		str = ft_nextword(str);
+	}
+	return (count);
 }

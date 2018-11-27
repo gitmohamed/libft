@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/22 20:40:49 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/17 19:30:22 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/25 19:45:36 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int		ft_strlen(char *str)
 	int		i;
 
 	i = 0;
-	while(str[i])
+	while (str[i])
 		i++;
 	return (i);
 }

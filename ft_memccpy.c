@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/30 23:56:06 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/17 19:08:10 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/26 19:01:23 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	unsigned char *ptr1;
-	unsigned char *ptr2;
-	size_t				i;
+	size_t			i;
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
 
 	i = 0;
 	ptr1 = (unsigned char *)src;
@@ -30,4 +30,3 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	}
 	return (NULL);
 }
-

@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 13:27:16 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/21 20:24:49 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/26 16:36:44 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_putstr_fd(char *str, int fd)
 {
-	while (*str && str)
-		ft_putchar_fd(*str++, fd);
+	if (str)
+	{
+		while (*str && str)
+			ft_putchar_fd(*str++, fd);
+	}
 }

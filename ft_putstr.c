@@ -6,7 +6,7 @@
 /*   By: mohhassa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/23 11:00:52 by mohhassa          #+#    #+#             */
-/*   Updated: 2018/11/17 19:38:35 by mohhassa         ###   ########.fr       */
+/*   Updated: 2018/11/26 16:32:31 by mohhassa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void	ft_putstr(char *str)
 {
-	ft_putstr_fd(str, 1);
+	if (str)
+		ft_putstr_fd(str, 1);
 }
